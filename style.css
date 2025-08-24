@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     /*
     background-image: url(./assets/bg-mobile.png);
@@ -15,7 +16,7 @@ body {
 
     /* background color, image, repeat, position/size */
 
-    background: url(./assets/bg-mobile.png) no-repeat center top/cover;
+    background: url(./assets/bg-mobile.jpg) no-repeat center top/cover;
 
 
 }
@@ -80,13 +81,14 @@ ul li a {
     backdrop-filter: blur(4px); /* desfoca o fundo */
     text-decoration: none; /* remove o sublinhado do link */
     font-weight: 500; /* peso da fonte */
+    font-size: 16px;
     transition: background 0.2s ease, border 0.3s ease; /* transição suave para o fundo e borda */
 }   
 
 
 /* Links ao passar o mouse  pseudo-selector */
 ul li a:hover {
-    background: rgba(255, 255, 255, 0.5); /* cor de fundo com transparência ao passar o mouse */
+    background: rgba(255, 255, 255, 0.05); /* cor de fundo com transparência ao passar o mouse */
     border: 1.5px solid white; /* borda com transparência ao passar o mouse */
 }
 
@@ -96,7 +98,7 @@ ul li a:hover {
     display: flex; /* exibe os ícones em linha */
     justify-content: center; /* alinha os ícones horizontalmente */
    /* gap: 16px; /* espaçamento entre os ícones */
-    padding: 24px 0; /* espaçamento interno */
+    padding: 24px; /* espaçamento interno */
     font-size: 24px;
 }
 
@@ -112,4 +114,14 @@ ul li a:hover {
 
 #social-icons a:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
 }
